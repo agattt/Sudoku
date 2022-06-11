@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:controller="com.example.sudoku.MainController" prefHeight="650.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+      <Button fx:id="easyButton" onAction="#onEasyButtonClick" layoutX="88.0" layoutY="258.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="Łatwy">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="43.0" layoutY="102.0" text="Nazwa użytkownika">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="205.0" text="Poziom trudności">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="38.0" layoutY="153.0" prefHeight="25.0" prefWidth="478.0" />
+      <TextArea fx:id="notification" editable="false" layoutX="36.0" layoutY="365.0" prefHeight="200.0" prefWidth="478.0" />
+      <Button fx:id="mediumButton" onAction="#onMediumButtonClick" layoutX="235.0" layoutY="258.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="Średni">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="hardButton" onAction="#onHardButtonClick" layoutX="381.0" layoutY="258.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="80.0" text="Trudny">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label  layoutX="43.0" layoutY="325.0" text="Powiadomienia">
+         <font>
+            <Font name="Arial Black" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
